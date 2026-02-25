@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kore Digital | Elite Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+        .kore-gradient { background: linear-gradient(90deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .kore-card:hover { transform: translateY(-10px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter flex items-center gap-2">
+                <div class="bg-blue-600 text-white w-8 h-8 flex items-center justify-center rounded-lg text-lg">K</div>
+                THE KORE<span class="text-blue-600">DIGITAL</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm uppercase tracking-wider">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Start a Project</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest italic">Redefining the Center</span>
+            <h1 class="mt-8 text-5xl md:text-7xl font-extrabold tracking-tight leading-tight">
+                Master Your Market from <br>
+                <span class="kore-gradient">The Kore.</span>
+            </h1>
+            <p class="mt-6 text-lg text-slate-600 max-w-2xl mx-auto">
+                We are a high-impact digital agency built for brands that refuse to be average. 
+                From SEO to custom development, we handle the strategy while you handle the growth.
+            </p>
+            <div class="mt-10 flex flex-col md:flex-row justify-center gap-4">
+                <a href="#services" class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:shadow-xl transition shadow-lg">Our Expertise</a>
+                <a href="#contact" class="bg-white border border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-100 transition shadow-sm">Get Free Audit</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 italic">Kore Capabilities</h2>
+                <div class="h-1.5 w-20 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="kore-card p-8 rounded-3xl border border-slate-100 bg-slate-50 hover:border-blue-300 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">SEO Dominance</h3>
+                    <p class="text-slate-600 mb-6">Own the search results. We optimize your brand's kore visibility to ensure you are seen by the right audience.</p>
+                </div>
+
+                <div class="kore-card p-8 rounded-3xl border border-slate-100 bg-slate-50 hover:border-purple-300 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-purple-600 text-white rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="monitor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Custom Web Dev</h3>
+                    <p class="text-slate-600 mb-6">Fast, secure, and stunning. We build digital homes for businesses that want to leave a lasting impression.</p>
+                </div>
+
+                <div class="kore-card p-8 rounded-3xl border border-slate-100 bg-slate-50 hover:border-pink-300 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-pink-600 text-white rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Social Strategy</h3>
+                    <p class="text-slate-600 mb-6">We turn social platforms into sales engines through creative storytelling and data-backed content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto bg-slate-900 rounded-[2rem] p-10 md:p-16 text-white overflow-hidden relative">
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-600/20 rounded-full blur-3xl"></div>
+            
+            <h2 class="text-4xl font-bold mb-6 text-center">Contact <span class="text-blue-500">The Kore.</span></h2>
+            <p class="text-slate-400 mb-10 text-center">Ready to start? Fill out the form below.</p>
+            
+            <form action="#" class="grid md:grid-cols-2 gap-4">
+                <input type="text" placeholder="Your Name" class="bg-slate-800 border-none rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none">
+                <input type="email" placeholder="Email" class="bg-slate-800 border-none rounded-xl p-4 focus:ring-2 focus:ring-blue-500 outline-none">
+                <textarea placeholder="Tell us about your goals" class="md:col-span-2 bg-slate-800 border-none rounded-xl p-4 h-32 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+                <button class="md:col-span-2 bg-blue-600 py-4 rounded-xl font-bold hover:bg-blue-700 transition">Let's Connect</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+            <p>&copy; 2026 The Kore Digital. Built for Excellence.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-blue-600">Instagram</a>
+                <a href="#" class="hover:text-blue-600">LinkedIn</a>
+                <a href="#" class="hover:text-blue-600">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
